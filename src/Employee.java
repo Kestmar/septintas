@@ -1,4 +1,4 @@
-public class Darbuotojas
+public class Employee
 {
     // Susikuriame kintamuosius, kuriuos turės ši klasė
     // Kintamuosius pagal enkapsuliacijos taisykles privaloma daryti PRIVATE ir juos norint pasiekti sukurtu jiems getterius ir setterius
