@@ -5,7 +5,7 @@ public class PagrindinePrograma
     public static void main(String[] args)
     {
         // Sukuriamas tuščias darbuotojo objektas
-        Darbuotojas pirmasDarbuotojas = new Darbuotojas();
+        Darbuotojas pirmasEmployee = new Employee();
 
         // Iš konsolės nuskaitome duomenis ir su setteriais įdedame į darbuotojo objektą.
         Scanner konsolesSkaitytuvas = new Scanner(System.in);
@@ -13,9 +13,9 @@ public class PagrindinePrograma
         String vardas = konsolesSkaitytuvas.nextLine();
 
         // Su setteriu įdedu vardą į darbuotojo objektą
-        pirmasDarbuotojas.setVardas(vardas);
+        pirmasEmployee.setVardas(vardas);
 
-        System.out.println(pirmasDarbuotojas);
+        System.out.println(pirmasEmployee);
 
 
         // Nuskaitome pavardę
@@ -23,9 +23,9 @@ public class PagrindinePrograma
         String pavarde = konsolesSkaitytuvas.nextLine();
 
         // Su setteriu įdedu pavardę į darbuotojo objektą
-        pirmasDarbuotojas.setPavarde(pavarde);
+        pirmasEmployee.setPavarde(pavarde);
 
-        System.out.println(pirmasDarbuotojas);
+        System.out.println(pirmasEmployee);
 
 
         // Nuskaitome pareigas
@@ -33,9 +33,9 @@ public class PagrindinePrograma
         String pareigos = konsolesSkaitytuvas.nextLine();
 
         // Su setteriu įdedu pavardę į darbuotojo objektą
-        pirmasDarbuotojas.setPareigos(pareigos);
+        pirmasEmployee.setPareigos(pareigos);
 
-        System.out.println(pirmasDarbuotojas);
+        System.out.println(pirmasEmploee);
         // Visus šis tris pavyzdžius buvo galima sutrumpinti iki:
         // pirmasDarbuotojas.setVardas(konsolesSkaitytuvas.nextLine());
 
@@ -48,17 +48,17 @@ public class PagrindinePrograma
         // Su setteriu įdedame algą į darbuotojo objektą
         pirmasDarbuotojas.setAlga(alga);
 
-        System.out.println(pirmasDarbuotojas);
+        System.out.println(pirmasEmployee);
 
 
 
 
         // Išvedame tik vieną iš darbuotojo kintamųjų, pvz. algą
-        System.out.println("Pirmo darbuotojo alga yra: " + pirmasDarbuotojas.getAlga());
+        System.out.println("Pirmo darbuotojo alga yra: " + pirmasEmployee.getAlga());
 
 
         // Išvedame darbuotojo bonusą, naudojant darbuotojo klasės funkciją
-        System.out.println("Pirmo darbuotojo bonusas yra: " + pirmasDarbuotojas.bonusoApskaiciavimas());
+        System.out.println("Pirmo darbuotojo bonusas yra: " + pirmasEmployee.bonusoApskaiciavimas());
     }
 
 
